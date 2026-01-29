@@ -23,4 +23,4 @@ jobs:
       # Deploy to S3
       - name: Sync files to S3
         run: |
-          aws s3 sync dist/ s3://naveen-portfolio-333/* --delete
+          aws s3 sync . s3://naveen-portfolio-333/* --delete
